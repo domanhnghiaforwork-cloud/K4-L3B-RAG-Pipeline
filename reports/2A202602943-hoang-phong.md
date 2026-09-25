@@ -4,7 +4,7 @@
 
 - Họ và tên: Hoàng Phong
 - Mã học viên: 2A202602943
-- Nhóm: [Điền tên hoặc số nhóm]
+- Nhóm: Nhóm như nào cũng được
 - Vai trò chính: Data collection
 - Repository/branch: `K4-L3B-RAG-Pipeline` / `main`
 
@@ -15,7 +15,7 @@
 | Thu thập văn bản pháp lý | Xây dựng Task 1 và thu thập 3 nghị định chính thức về đăng ký doanh nghiệp, thuế thương mại điện tử và hóa đơn điện tử | `src/task1_collect_legal_docs.py`, `data/landing/legal/`, commit `67f50f0`, `7a9ca53` | Done |
 | Thu thập bài viết | Xây dựng Task 2 và thu thập 5 bài viết có URL, tiêu đề, ngày crawl và nội dung Markdown | `src/task2_crawl_news.py`, `data/landing/news/`, commit `67f50f0`, `7a9ca53` | Done |
 | Kiểm tra dữ liệu đầu vào | Kiểm tra đủ số lượng file, định dạng PDF/JSON, metadata bắt buộc và sự phù hợp với chủ đề | `tests/test_acceptance.py` | Done |
-| Hỗ trợ chuẩn hóa dữ liệu | Phối hợp kiểm tra nội dung sau OCR/convert, đặc biệt các đoạn dùng trong golden dataset | `data/standardized/legal/`, `data/standardized/news/` | Partial — cần ghi kết quả rà soát cuối |
+| Hỗ trợ chuẩn hóa dữ liệu | Phối hợp kiểm tra nội dung sau OCR/convert, đặc biệt các đoạn dùng trong golden dataset | `data/standardized/legal/`, `data/standardized/news/`, `evaluation_results.json` | Done — corpus đã index và được đánh giá trên 18 câu |
 
 ## Quyết định kỹ thuật quan trọng
 
@@ -32,7 +32,7 @@
 - Test hoặc query tôi đã dùng: `python -m pytest tests/test_acceptance.py -q -k "corpus_has_required"`
 - Kết quả: Đủ 3 tài liệu legal và 5 bài news có metadata bắt buộc.
 - Lỗi đã phát hiện và cách xử lý: PDF chính thức không có text layer; nhóm bổ sung OCRmyPDF/Tesseract trước khi convert Markdown.
-- Bằng chứng bổ sung cần điền: [Ảnh chụp/test output hoặc commit cuối cùng nếu có]
+- Bằng chứng bổ sung: corpus được index thành 1.425 chunks; acceptance test xác nhận đủ 3 legal, 5 news và 18 golden cases; raw evidence nằm trong `group_project/evaluation/evaluation_results.json`.
 
 ## Điều còn hạn chế
 
@@ -43,5 +43,15 @@
 
 Tôi xác nhận nội dung trên phản ánh đúng phần việc của mình và có thể giải thích hoặc chạy lại trong buổi demo.
 
-- Ngày: [Điền ngày nộp]
+- Ngày: 25/09/2026
 - Tên thành viên: Hoàng Phong
+
+<!-- evaluation-results:start -->
+## Kết quả evaluation liên quan phần việc data
+
+Evaluation ngày 2026-09-25T13:45:40+07:00: dense-only average **0.8950**, hybrid + RRF average **0.9280** (delta **+0.0330**).
+
+- Corpus đã chuẩn hóa gồm 3 legal + 5 news và được index thành 1.425 chunks.
+- Ba worst performers và source IDs được lưu trong `evaluation_summary.json`;
+  đây là bằng chứng để rà soát lỗi OCR/nội dung nguồn.
+<!-- evaluation-results:end -->

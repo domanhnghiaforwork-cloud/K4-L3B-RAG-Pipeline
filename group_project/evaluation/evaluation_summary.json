@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-09-25T13:45:40+07:00",
+  "framework": "ragas 0.4.3",
+  "evaluator_model": "gemini-3.5-flash-lite",
+  "generator_model": "gemini-3.5-flash-lite",
+  "embedding_model": "BAAI/bge-m3",
+  "git_commit": "f5c23ae",
+  "golden_dataset_size": 18,
+  "top_k": 5,
+  "evaluation_threshold": -1.0,
+  "configurations": {
+    "dense_only": {
+      "label": "Config A — dense-only",
+      "count": 18,
+      "metrics": {
+        "faithfulness": 0.935185,
+        "answer_relevance": 0.890062,
+        "context_recall": 0.916667,
+        "context_precision": 0.838272
+      },
+      "average": 0.895047,
+      "latency_mean_seconds": 8.9215,
+      "latency_median_seconds": 5.98825
+    },
+    "hybrid_rrf": {
+      "label": "Config B — hybrid + RRF",
+      "count": 18,
+      "metrics": {
+        "faithfulness": 0.925926,
+        "answer_relevance": 0.923105,
+        "context_recall": 0.988889,
+        "context_precision": 0.874074
+      },
+      "average": 0.927998,
+      "latency_mean_seconds": 6.037706,
+      "latency_median_seconds": 6.0971
+    }
+  },
+  "deltas_hybrid_minus_dense": {
+    "faithfulness": -0.009259,
+    "answer_relevance": 0.033043,
+    "context_recall": 0.072222,
+    "context_precision": 0.035802,
+    "average": 0.032951
+  },
+  "paired_wins": {
+    "dense_only": 6,
+    "hybrid_rrf": 7,
+    "tie": 5
+  },
+  "partial_refusal_count": 1,
+  "missing_citation_count": 0,
+  "winner": "hybrid_rrf",
+  "worst_performers": [
+    {
+      "question_id": 15,
+      "question": "Bộ tài liệu thuế cho thương mại điện tử hướng dẫn riêng cho những nhóm đối tượng nào?",
+      "config": "dense_only",
+      "metrics": {
+        "faithfulness": 0.666667,
+        "answer_relevance": 0.0,
+        "context_recall": 0.0,
+        "context_precision": 0.0
+      },
+      "average": 0.166667,
+      "source_ids": [
+        "news/04_huong_dan_thue_ban_hang_da_kenh.md::chunk-10",
+        "news/04_huong_dan_thue_ban_hang_da_kenh.md::chunk-9",
+        "news/04_huong_dan_thue_ban_hang_da_kenh.md::chunk-0",
+        "news/04_huong_dan_thue_ban_hang_da_kenh.md::chunk-6",
+        "news/04_huong_dan_thue_ban_hang_da_kenh.md::chunk-2"
+      ]
+    },
+    {
+      "question_id": 2,
+      "question": "Nghị định 168/2025/NĐ-CP điều chỉnh những nội dung nào liên quan đến hộ kinh doanh?",
+      "config": "hybrid_rrf",
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevance": 0.942184,
+        "context_recall": 0.8,
+        "context_precision": 0.333333
+      },
+      "average": 0.518879,
+      "source_ids": [
+        "legal/nghi_dinh_168_2025_dang_ky_doanh_nghiep.md::chunk-0",
+        "legal/nghi_dinh_70_2025_hoa_don_chung_tu.md::chunk-0",
+        "legal/nghi_dinh_168_2025_dang_ky_doanh_nghiep.md::chunk-5",
+        "news/03_thue_va_hoa_don_tren_san_thuong_mai_dien_tu.md::chunk-5",
+        "news/02_chuyen_doi_hoa_don_dien_tu.md::chunk-2"
+      ]
+    },
+    {
+      "question_id": 2,
+      "question": "Nghị định 168/2025/NĐ-CP điều chỉnh những nội dung nào liên quan đến hộ kinh doanh?",
+      "config": "dense_only",
+      "metrics": {
+        "faithfulness": 0.166667,
+        "answer_relevance": 0.960248,
+        "context_recall": 0.5,
+        "context_precision": 1.0
+      },
+      "average": 0.656729,
+      "source_ids": [
+        "legal/nghi_dinh_168_2025_dang_ky_doanh_nghiep.md::chunk-5",
+        "news/02_chuyen_doi_hoa_don_dien_tu.md::chunk-2",
+        "legal/nghi_dinh_70_2025_hoa_don_chung_tu.md::chunk-246",
+        "news/02_chuyen_doi_hoa_don_dien_tu.md::chunk-12",
+        "legal/nghi_dinh_168_2025_dang_ky_doanh_nghiep.md::chunk-836"
+      ]
+    }
+  ]
+}
