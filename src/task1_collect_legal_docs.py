@@ -1,15 +1,4 @@
-"""
-Task 1 — Thu thập tài liệu chính sách/quy định.
-
-Hướng dẫn:
-    1. Chọn chủ đề của nhóm.
-    2. Tìm tối thiểu 3 tài liệu PDF/DOCX từ nguồn công khai.
-    3. Lưu file gốc vào data/landing/legal/.
-    4. Đặt tên không dấu và thể hiện đúng nội dung.
-
-Ví dụ tài liệu: học phí, học bổng, ký túc xá, quy trình đăng ký.
-Nếu website chặn crawler, hãy chọn nguồn công khai khác; không vượt WAF.
-"""
+"""Task 1: download official legal documents for Vietnamese household businesses."""
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -18,51 +7,53 @@ from urllib.request import Request, urlopen
 
 DATA_DIR = Path(__file__).parent.parent / "data" / "landing" / "legal"
 
+# Official PDFs published by the Government of Vietnam. Together they cover
+# business registration, e-commerce tax, and electronic invoices.
 DOCUMENT_SOURCES = {
-    "ielts_writing_band_descriptors.pdf": (
-        "https://ielts.org/cdn/ielts-guides/"
-        "ielts-writing-band-descriptors.pdf"
+    "nghi_dinh_168_2025_dang_ky_doanh_nghiep.pdf": (
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/7/168nd.signed.pdf"
     ),
-    "ielts_academic_writing_sample_responses.pdf": (
-        "https://ielts.org/cdn/computer-delivered-sample-tests-academic-writing/"
-        "ielts-academic-writing-example-responses-to-parts-1-and-2-with-band-"
-        "scores-and-examiner-comments.pdf"
+    "nghi_dinh_117_2025_thue_thuong_mai_dien_tu.pdf": (
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/6/117-ndcp.signed.pdf"
     ),
-    "ielts_general_writing_sample_responses.pdf": (
-        "https://ielts.org/cdn/computer-delivered-sample-tests-general-training-"
-        "writing/ielts-general-training-writing-example-responses-to-parts-1-and-"
-        "2-with-band-scores-and-examiner-comments.pdf"
+    "nghi_dinh_70_2025_hoa_don_chung_tu.pdf": (
+        "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/3/70-nd-cp.signed.pdf"
     ),
 }
 
+USER_AGENT = "Mozilla/5.0 (compatible; VinUni-RAG-Corpus/1.0)"
+
 
 def setup_directory() -> None:
-    """Tạo thư mục lưu tài liệu gốc."""
+    """Create the directory that stores original legal documents."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     print(f"Ready: {DATA_DIR}")
 
 
+def _download_pdf(url: str) -> bytes:
+    request = Request(url, headers={"User-Agent": USER_AGENT})
+    with urlopen(request, timeout=90) as response:
+        content = response.read()
+
+    if not content.startswith(b"%PDF-"):
+        raise ValueError(f"The response is not a PDF: {url}")
+    if len(content) <= 1024:
+        raise ValueError(f"The downloaded PDF is unexpectedly small: {url}")
+    return content
+
+
 def download_documents() -> None:
-    """Tải ít nhất 3 PDF/DOCX từ nguồn công khai."""
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    """Download three public, official PDFs and preserve their original bytes."""
+    setup_directory()
 
     def download_one(filename: str, url: str) -> Path:
         output = DATA_DIR / filename
         if output.exists() and output.stat().st_size > 1024:
-            return output
+            with output.open("rb") as existing:
+                if existing.read(5) == b"%PDF-":
+                    return output
 
-        request = Request(
-            url,
-            headers={
-                "User-Agent": "Mozilla/5.0 (compatible; IELTS-RAG-Collector/1.0)",
-                "Accept": "application/pdf",
-            },
-        )
-        with urlopen(request, timeout=60) as response:
-            content = response.read()
-        if len(content) <= 1024 or not content.startswith(b"%PDF"):
-            raise ValueError(f"Downloaded content is not a valid PDF: {url}")
-
+        content = _download_pdf(url)
         temporary = output.with_suffix(output.suffix + ".part")
         temporary.write_bytes(content)
         temporary.replace(output)
@@ -74,9 +65,9 @@ def download_documents() -> None:
             for filename, url in DOCUMENT_SOURCES.items()
         }
         for job in as_completed(jobs):
-            print(f"Saved: {job.result()}")
+            output = job.result()
+            print(f"Ready: {output} ({output.stat().st_size:,} bytes)")
 
 
 if __name__ == "__main__":
-    setup_directory()
     download_documents()
