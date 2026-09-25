@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Nghị định 168/2025/NĐ-CP về đăng ký doanh nghiệp có hiệu lực từ ngày nào?",
+    "expected_answer": "Nghị định 168/2025/NĐ-CP có hiệu lực từ ngày 01/7/2025.",
+    "expected_context": "Chính phủ ban hành Nghị định 168/2025/NĐ-CP về đăng ký doanh nghiệp. Nghị định này có hiệu lực từ ngày 01/7/2025."
+  },
+  {
+    "question": "Nghị định 168/2025/NĐ-CP điều chỉnh những nội dung nào liên quan đến hộ kinh doanh?",
+    "expected_answer": "Nghị định quy định việc đăng ký và hoạt động của hộ kinh doanh, liên thông thủ tục đăng ký, đăng ký hộ kinh doanh qua mạng, cung cấp và chia sẻ thông tin, cơ quan đăng ký kinh doanh và quản lý nhà nước về đăng ký hộ kinh doanh.",
+    "expected_context": "Nghị định này quy định về hồ sơ, trình tự, thủ tục đăng ký doanh nghiệp; quy định về đăng ký và hoạt động của hộ kinh doanh; quy định việc liên thông thủ tục đăng ký doanh nghiệp, đăng ký hộ kinh doanh; đăng ký doanh nghiệp, đăng ký hộ kinh doanh qua mạng thông tin điện tử; cung cấp thông tin đăng ký doanh nghiệp, đăng ký hộ kinh doanh, khai thác và chia sẻ thông tin doanh nghiệp; quy định về cơ quan đăng ký kinh doanh đối với doanh nghiệp, hộ kinh doanh và quản lý nhà nước về đăng ký doanh nghiệp, đăng ký hộ kinh doanh."
+  },
+  {
+    "question": "Khi thực hiện thủ tục đăng ký doanh nghiệp, người thành lập doanh nghiệp phải nộp bao nhiêu bộ hồ sơ?",
+    "expected_answer": "Người thành lập doanh nghiệp hoặc doanh nghiệp chỉ phải nộp 01 bộ hồ sơ; cơ quan đăng ký kinh doanh không được yêu cầu nhiều hơn hoặc yêu cầu giấy tờ ngoài quy định.",
+    "expected_context": "Người thành lập doanh nghiệp hoặc doanh nghiệp nộp 01 bộ hồ sơ khi thực hiện thủ tục đăng ký doanh nghiệp. Cơ quan đăng ký kinh doanh không được yêu cầu người thành lập doanh nghiệp hoặc doanh nghiệp nộp nhiều hơn 01 bộ hồ sơ hoặc giấy tờ khác ngoài các giấy tờ trong hồ sơ đăng ký doanh nghiệp theo quy định tại Luật Doanh nghiệp và Nghị định này."
+  },
+  {
+    "question": "Mã số địa điểm kinh doanh gồm bao nhiêu chữ số và có phải là mã số thuế không?",
+    "expected_answer": "Mã số địa điểm kinh doanh gồm 5 chữ số, được cấp từ 00001 đến 99999 và không phải là mã số thuế của địa điểm kinh doanh.",
+    "expected_context": "Mã số địa điểm kinh doanh là mã số gồm 5 chữ số được cấp theo số thứ tự từ 00001 đến 99999. Mã số này không phải là mã số thuế của địa điểm kinh doanh."
+  },
+  {
+    "question": "Từ thời điểm nào và với mức doanh thu nào hộ khoán bán trực tiếp cho người tiêu dùng phải dùng hóa đơn điện tử từ máy tính tiền?",
+    "expected_answer": "Từ ngày 01/6/2025, hộ khoán có doanh thu hằng năm từ 1 tỷ đồng trở lên và bán hàng hóa hoặc cung cấp dịch vụ trực tiếp cho người tiêu dùng phải lập hóa đơn điện tử từ máy tính tiền kết nối với cơ quan thuế.",
+    "expected_context": "Trước các kiến nghị, Cục Thuế đã làm rõ quy định pháp luật hiện hành. Theo đó, từ ngày 01/6/2025, hộ khoán có doanh thu hàng năm từ 1 tỷ đồng trở lên, khi bán hàng hóa hoặc cung cấp dịch vụ trực tiếp cho người tiêu dùng, phải lập hóa đơn điện tử từ máy tính tiền kết nối với cơ quan thuế."
+  },
+  {
+    "question": "Hóa đơn điện tử có cần in ra giấy không và hộ khoán có bắt buộc lưu chứng từ mua vào không?",
+    "expected_answer": "Không cần in hóa đơn điện tử ra giấy vì dữ liệu đã có trên hệ thống và có thể tra cứu; theo Thông tư 40/2021/TT-BTC, hộ khoán không bắt buộc lưu giữ chứng từ mua vào.",
+    "expected_context": "Dữ liệu hóa đơn điện tử đã có sẵn trên hệ thống của cơ quan thuế, người bán và người mua đều có thể tra cứu mà không cần in hóa đơn ra giấy. Về chứng từ mua vào, theo Thông tư 40/2021/TT-BTC, hộ khoán không bắt buộc phải lưu giữ."
+  },
+  {
+    "question": "Hộ khoán phải làm gì khi thay đổi quy mô kinh doanh và khi nào cơ quan thuế điều chỉnh mức thuế khoán?",
+    "expected_answer": "Hộ khoán phải khai điều chỉnh, bổ sung tờ khai mẫu 01/CNKD. Nếu doanh thu khoán thay đổi từ 50% trở lên, cơ quan thuế điều chỉnh mức thuế khoán kể từ thời điểm thay đổi trong năm tính thuế.",
+    "expected_context": "Trường hợp hộ khoán thay đổi quy mô kinh doanh, họ phải khai điều chỉnh, bổ sung tờ khai thuế theo mẫu số 01/CNKD. Nếu doanh thu khoán thay đổi từ 50% trở lên, cơ quan thuế sẽ ban hành thông báo điều chỉnh mức thuế khoán kể từ thời điểm có thay đổi trong năm tính thuế."
+  },
+  {
+    "question": "Nhà nước có chính sách hỗ trợ nền tảng số và phần mềm kế toán cho hộ kinh doanh như thế nào?",
+    "expected_answer": "Nhà nước bố trí kinh phí để cung cấp miễn phí nền tảng số và phần mềm kế toán dùng chung cho doanh nghiệp nhỏ, siêu nhỏ, hộ kinh doanh và cá nhân kinh doanh.",
+    "expected_context": "Nhà nước bố trí kinh phí để cung cấp miễn phí nền tảng số, phần mềm kế toán dùng chung cho doanh nghiệp nhỏ, siêu nhỏ, hộ kinh doanh và cá nhân kinh doanh."
+  },
+  {
+    "question": "Từ ngày 1/7/2025, sàn thương mại điện tử có chức năng thanh toán thực hiện nghĩa vụ thuế nào thay cho hộ, cá nhân kinh doanh?",
+    "expected_answer": "Sàn thương mại điện tử có chức năng thanh toán thực hiện kê khai thay và nộp thuế thay cho cá nhân, hộ kinh doanh.",
+    "expected_context": "Kể từ ngày 1/7/2025, Nghị định số 117/2025/NĐ-CP ngày 9/6/2025 của Chính phủ quy định về quản lý thuế đối với hoạt động thương mại điện tử của cá nhân, hộ kinh doanh có hiệu lực thì sàn thương mại điện tử có chức năng thanh toán sẽ thực hiện kê khai thay, nộp thuế thay cho cá nhân, hộ kinh doanh."
+  },
+  {
+    "question": "Cá nhân kinh doanh trên sàn và bán hàng trực tiếp đến người tiêu dùng phải sử dụng loại hóa đơn nào?",
+    "expected_answer": "Cá nhân kinh doanh thuộc trường hợp này phải sử dụng hóa đơn điện tử khởi tạo từ máy tính tiền.",
+    "expected_context": "Trường hợp cá nhân kinh doanh trên sàn và có hoạt động kinh doanh bán hàng hoá, cung cấp dịch vụ trực tiếp đến người tiêu dùng thì thuộc diện sử dụng hóa đơn điện tử khởi tạo từ máy tính tiền theo quy định tại khoản 8 Điều 1 Nghị định số 70/2025/NĐ-CP ."
+  },
+  {
+    "question": "Hộ kinh doanh trên sàn không bán hàng hóa, cung cấp dịch vụ trực tiếp đến người tiêu dùng sử dụng loại hóa đơn nào?",
+    "expected_answer": "Hộ kinh doanh phải sử dụng hóa đơn điện tử có mã của cơ quan thuế, trừ trường hợp đủ điều kiện và đăng ký sử dụng hóa đơn điện tử từ máy tính tiền.",
+    "expected_context": "Trường hợp hộ kinh doanh trên sàn và không có hoạt động kinh doanh bán hàng hoá, cung cấp dịch vụ trực tiếp đến người tiêu dùng thì thuộc diện sử dụng hóa đơn điện tử có mã của cơ quan thuế trừ trường hợp hộ kinh doanh có điều kiện, đăng ký sử dụng HĐ.MTT."
+  },
+  {
+    "question": "Khi hộ hoặc cá nhân kinh doanh ủy nhiệm cho sàn thương mại điện tử xuất hóa đơn thì ai chịu trách nhiệm xuất hóa đơn?",
+    "expected_answer": "Sàn thương mại điện tử chịu trách nhiệm xuất hóa đơn thay cho hộ hoặc cá nhân kinh doanh đã ủy nhiệm.",
+    "expected_context": "Trường hợp cá nhân, hộ kinh doanh trên sàn ủy nhiệm cho sàn xuất hóa đơn theo quy định tại khoản 3 Điều 1 Nghị định số 70/2025/NĐ-CP sửa đổi khoản 7 Điều 4 Nghị định số 123/2021/NĐ-CP (có hiệu lực từ ngày 1/6/2025) và quy định tại điểm c khoản 3 Điều 4 Thông tư số 32/2025/TT-BTC (có hiệu lực từ ngày 1/6/2025) thì sàn thương mại điện tử có trách nhiệm xuất hóa đơn thay cho hộ cá nhân kinh doanh ủy nhiệm."
+  },
+  {
+    "question": "Kinh doanh trên môi trường số hoặc bán hàng đa kênh có làm thay đổi bản chất nghĩa vụ thuế không?",
+    "expected_answer": "Không. Người nộp thuế vẫn phải quản lý thống nhất thông tin định danh, doanh thu, giao dịch, hóa đơn, số thuế đã được khấu trừ hoặc nộp thay và chủ động khai bổ sung khi có sai sót.",
+    "expected_context": "Kinh doanh trên môi trường số hoặc đồng thời qua nhiều kênh không làm thay đổi bản chất nghĩa vụ thuế. Người nộp thuế cần quản lý thống nhất thông tin định danh, doanh thu, giao dịch, hóa đơn và số thuế đã được khấu trừ, khai thay, nộp thay; chủ động rà soát, khai bổ sung khi phát hiện sai sót."
+  },
+  {
+    "question": "Bộ tài liệu về thuế và hóa đơn điện tử trong thương mại điện tử, bán hàng đa kênh gồm những phần nào?",
+    "expected_answer": "Bộ tài liệu gồm 7 phần: tổng quan và phạm vi áp dụng; điểm mới trọng tâm; hướng dẫn theo nhóm đối tượng; hướng dẫn theo nghiệp vụ; checklist tuân thủ; sai sót thường gặp và khuyến nghị; thông điệp tuân thủ và tổ chức thực hiện.",
+    "expected_context": "Bộ tài liệu gồm 7 phần, bao gồm: tổng quan chính sách và phạm vi áp dụng; những điểm mới trọng tâm liên quan đến thương mại điện tử và bán hàng đa kênh; hướng dẫn thực hiện theo từng nhóm đối tượng; hướng dẫn theo nhóm nghiệp vụ trọng tâm; checklist tuân thủ dành cho người nộp thuế; các sai sót thường gặp và khuyến nghị tuân thủ; thông điệp tuân thủ và tổ chức thực hiện."
+  },
+  {
+    "question": "Bộ tài liệu thuế cho thương mại điện tử hướng dẫn riêng cho những nhóm đối tượng nào?",
+    "expected_answer": "Tài liệu hướng dẫn riêng cho doanh nghiệp và hợp tác xã kinh doanh đa kênh; hộ, cá nhân bán hàng online; KOL, KOC, streamer, affiliate, freelancer, nhà sáng tạo nội dung; nhà cung cấp hoặc chủ quản nền tảng nước ngoài, cá nhân không cư trú; cùng các nền tảng và tổ chức có trách nhiệm khấu trừ, khai thay, nộp thay.",
+    "expected_context": "Trong đó, tài liệu hướng dẫn riêng cho doanh nghiệp, hợp tác xã kinh doanh đa kênh; hộ kinh doanh, cá nhân bán hàng online; KOL, KOC, streamer, affiliate, freelancer và nhà sáng tạo nội dung; nhà cung cấp nước ngoài, chủ quản nền tảng nước ngoài, cá nhân không cư trú; chủ quản nền tảng thương mại điện tử, nền tảng số khác và các tổ chức có trách nhiệm khấu trừ, khai thay, nộp thay."
+  },
+  {
+    "question": "Hộ kinh doanh có nhiều điểm kinh doanh có cần tách mã số thuế cho từng điểm không?",
+    "expected_answer": "Không cần tách mã số thuế; hộ kinh doanh có thể dùng một mã chung cho tất cả các điểm kinh doanh và nộp thuế thống nhất.",
+    "expected_context": "Đại diện thuế cơ quan thuế trả lời: không cần tách MST, có thể dùng một mã chung cho tất cả các điểm kinh doanh và nộp thuế thống nhất."
+  },
+  {
+    "question": "Hộ kinh doanh mua hàng từ cá nhân hoặc nông dân mà không có hóa đơn đầu vào có thể dùng giấy tờ gì để chứng minh nguồn gốc?",
+    "expected_answer": "Hộ kinh doanh có thể dùng hợp đồng mua bán và chứng từ thanh toán để chứng minh nguồn gốc hàng hóa; cá nhân bán không bắt buộc phải xuất hóa đơn trong trường hợp này.",
+    "expected_context": "Về vấn đề này, đại diện Ban Chính sách, thuế quốc tế - Cục Thuế cho biết: Việc hộ khoán có cần chuyển sang kê khai hay không đã được hướng dẫn rõ trong Thông tư 40 và Thông tư 100/2021 của Bộ Tài chính. Trong đó, nếu doanh thu trên 1 tỷ đồng/năm thì bắt buộc phải sử dụng hóa đơn điện tử từ máy tính tiền. Đối với trường hợp không có hóa đơn đầu vào (mua từ cá nhân tiêu dùng hoặc nông dân), HKD có thể sử dụng hợp đồng mua bán, chứng từ thanh toán để chứng minh nguồn gốc hàng hóa. Không bắt buộc cá nhân bán phải xuất hóa đơn trong trường hợp này."
+  },
+  {
+    "question": "Hộ kinh doanh đã kê khai và sử dụng hóa đơn điện tử đúng quy định có bắt buộc chuyển sang hóa đơn điện tử từ máy tính tiền không?",
+    "expected_answer": "Không bắt buộc, trừ khi có yêu cầu cụ thể theo ngưỡng doanh thu; hộ vẫn có thể dùng hóa đơn trực tiếp nếu chưa đủ điều kiện chuyển đổi và cơ quan thuế chưa yêu cầu.",
+    "expected_context": "Giải đáp câu hỏi trên, cơ quan thuế cho biết: Nếu hộ đã kê khai và sử dụng hóa đơn điện tử theo đúng quy định, thì không bắt buộc phải chuyển sang dùng máy tính tiền, trừ khi có yêu cầu cụ thể theo ngưỡng doanh thu. Ngoài ra, HKD vẫn có thể sử dụng hóa đơn trực tiếp nếu chưa đáp ứng điều kiện chuyển đổi và cơ quan thuế chưa yêu cầu."
+  }
+]
